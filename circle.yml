@@ -2,6 +2,10 @@ machine:
   services:
     - docker
 
+test:
+  override:
+    - echo test
+
 dependencies:
   override:
     - docker info
